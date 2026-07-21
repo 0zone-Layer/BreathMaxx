@@ -42,5 +42,5 @@ jobs:
         run: |
           cd android
           ./gradlew assembleRelease \
-            -Pandroid.compileSdkVersion=34 \
-            -Pandroid.targetSdkVersion=34
+            -Pandroid.compileSdkVersion=35 \
+            -Pandroid.targetSdkVersion=35
