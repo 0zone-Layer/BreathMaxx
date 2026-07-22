@@ -47,3 +47,9 @@ jobs:
           ./gradlew assembleRelease \
             -Pandroid.compileSdkVersion=36 \
             -Pandroid.targetSdkVersion=35
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release
+          path: android/app/build/outputs/apk/release/*.apk
